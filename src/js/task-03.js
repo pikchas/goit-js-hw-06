@@ -24,6 +24,6 @@ const makeGallery = images.map(image => {
   
 });
 imagesEl.append(...makeGallery);
-console.log(imagesEl);
+
 
 
