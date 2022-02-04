@@ -1,11 +1,11 @@
 
-const widgetEl = {
+const refs = {
   body: document.body,
   colorName: document.querySelector('.color'),
   buttonChange: document.querySelector('.change-color'),
 }
 
-widgetEl.buttonChange.addEventListener('click', changeColor)
+refs.buttonChange.addEventListener('click', changeColor)
 
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215)
@@ -15,7 +15,7 @@ function getRandomHexColor() {
 
 function changeColor() {
   const color = getRandomHexColor();
-  widgetEl.colorName.textContent = color;
+  refs.colorName.textContent = color;
   document.body.style.backgroundColor = color;
       
 };
